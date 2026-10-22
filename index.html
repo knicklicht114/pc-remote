@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PC Remote – dein Handy als Fernbedienung für den PC</title>
+<meta name="description" content="Stream-Deck-Buttons, Spotify & Discord, Lautstärke pro App, Clips wie bei ShadowPlay und das Handy als zweiter Bildschirm. Kostenlos für Windows.">
+<meta name="theme-color" content="#08090d">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAb6SURBVHhe5ZttWFNlGMfPRz760Y9+y8LSLMtMszKDLANDFNICLV4UkQ3mS2+KVpoKLoJE0ZyCiubL1BJMM9JESK7EFxSvrJZFzpdkQ7ads7Odc3ffsDl2hsqzMU6w/3Xdn7wut9/vPOf/PGcXh2PJogwYos10a7RzJEPuXKlGi6OZJ4EmW4Kc+RLMz5EgO8cN2Ro3zNO6ISvXDXPzcHRumLMAZ6EbMhe5IGMxznsuSH/fBWkf4Hzognc/csE7S1wwe4kIs5eKMCtfhNRlIqQsx/lYhLc/EeGtT0WYucIJM1c6YcZnTnhzlROSVztraJIKhMrpBcLixNXOEZ6v23vRpbs1ugypOS9Tgtw5OHMl0GYhuPrwkLzGCUkFOIVOmF4owLS1AiSuFUyJej4/Tg+DPAjBZUG6K16XJpl0GTL0F/hpehTwuQBTiwRIKBLMCcV8pgen51maAlG6NLlUly5Df4Wf+gUKKBbgjRIBppTwxji9pWerIScFBuFVrxsw8F/yMGUdD/HrHM1xpfwQD2b36bzyAxC+lIe49TxM3uAwxRnusxIWpMmGgQr/+gacMpRQ5qjx4PonL82dNODhNzrgtU0OeLXMrvFgd4aWfl6aZI4I+I6x85MMtsEefO8+HyHwXzlg0mY7vLLZoffgkwDJFFHwBjvEbrHx4w0QxeWmw9DIg8fZaoeXy22xXF6GlB+J8DHlKKDCbuC0mZIxEuFjKmgFtDdyCF8XkfAVNpi4rd3MabPcplDgNctdYNgrwdFaCS7/IcNlk2+avfOnby7RXJX85uJf3czfndPknRbfHG5yw/rjKHarEAI8znYbcKHAF21xQ1s7qBabU4aiGjFo+Jd2kIAg4ddtc3u+hvo5cMEVFPyEShQQDLxupUvVK99dso0CM/yEnSggmMLbdUjyfGxnLlyRYaHe1WeFl1IhQPUl/xVY1exihn9xFwpghae2rz3jL0C7Rp22b3XInm8A8PttiRn+ha9JACM8bXXU9t5Y8VZQa6s7f813Ia63y8zwz+9uB44VnvZ52uK8uWWRVdvnAwQwwj+/BwWwwtMhRylArUPOebOvB0gAK/z4vSiAFZ5OeAECGOGzNjlDhqfCO6cUwAj/3D4SwAhPx1s63XlDAlivvOgC2H7SBckIHCw8FZ5SACv8OCMKYIWnwvMTYJWZl703La0yLNknBgVPhacUwAo/bj8JYISnwqMzvTckgPWeV+ZYsxtmbRGY4Knwzl3vIsCGAhjhxx5AAazwVHgBAhgLr7vYBBk0u509hqfCUwpghR97EAWwwlPhKQWwwNM9r0wL9siyQ2zwVHhKAazwzx68gwIY4anw6JHWm5sogAWeCs8bEb//zgYXJG7s+bLvutWd7SLATAIY4cd8gwJY4anw6BneGxLAAk+FRzmD/0dWZWjP80oBrPBjvkUBrPBUeAECGOCp7QuPiMyF190h5+wNfwGs8M8cIgGM8FR4SgEs8Kxb3b3gqfCUAljhR1ehAFZ4Kjw/AW0oQAV4Kjx/ARIz/OhqFMAKT4VHv9l5QwLUgKfC8xNgl5jhnz6MAljhqfAarvgE0LF2BsL2NTwV3hWL73tcvSMxwz/1HQlghKfC23PKZ56yA8/1fQ2vreE9n96ZE9dczPCjjrQBxwpPhbeoXPR8rC+mm7LfT9cXaP5RDD6/0zM8zcXrErRggV7DK3cRlzKd6zsGtzbv0DbXMfjvXafxpv8FoKz4RWCGH3UUBbDCewvPeDrwS6iVX61SUPBPfo8CgoGnwpuBy/z0b757UK0QfOIRe1DwTxwjAUHAdy08/WGx41RnsfuOx+FOuyhD4y03FJwNbtl74Uf+gAJCgQ+l8Hrjx4xQ4UfWoAA14Knte+PHjFDhH/8RBagBT1ud8lFWDfgRx0mACvC0zysFqAE//LgVuHDBTyvnoaRW7Pjp+u4eT4PgNLe6lOYdpxywz3un+JwA8VW2sMAPP4ECwnXly+oDD0vBpuqqGBb4x35CAcmrnOZwLPv9TfiQ0Eupx1URDvhHT6KApDVCYzju+dTdDmhoCf202NTqhowTjrDAR9daLdz0Amd1uAvvQQ82fVV4XeGH1aKAU9ZmLrnAqY9E+GGnUECd1chNLeRjIxQeHqmzpHIpSyEKBVgiDT66HgX8fKPzD6YRvDTy4FuNHfCUxBLb4IQino8ceAuN/+t1CcV8fqTAP3y61eDB9iXFAFHxJXxdBMCbhjfe470heqsK4c0DF97CByx9ZeLKbCMmr+ctAxP+dqwH8/6hlYDwjQNp2T/wyitDr5NM2uTQ93v4BkvlPe/5niTGwA+J3Wwz9j/41pqh9f+O9mCEHnrNLKbclhpTYTNOrLCZ/nfwtVZzdF1bdXS9RfNQneX+r8jeDcf9B3yA12E9cdjlAAAAAElFTkSuQmCC" type="image/png">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+:root {
+  --bg: #08090d;
+  --bg2: #0e1016;
+  --card: rgba(255, 255, 255, .045);
+  --card2: rgba(255, 255, 255, .08);
+  --line: rgba(255, 255, 255, .09);
+  --line2: rgba(255, 255, 255, .16);
+  --text: #eef0f7;
+  --muted: #9aa0b4;
+  --faint: #626779;
+  --accent: #7c5cff;
+  --accent2: #22d3ee;
+  --grad: linear-gradient(135deg, #7c5cff, #22d3ee);
+  --r: 20px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(900px 600px at 85% -10%, rgba(124, 92, 255, .22), transparent 60%),
+              radial-gradient(700px 500px at -10% 40%, rgba(34, 211, 238, .10), transparent 60%);
+}
+a { color: inherit; }
+h1, h2, h3 { line-height: 1.15; margin: 0; letter-spacing: -.02em; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 700px) { .wrap { padding: 0 28px; } }
+
+.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 12px 20px; border-radius: 14px; border: 1px solid var(--line2);
+  background: var(--card); color: var(--text); text-decoration: none; font-weight: 700; white-space: nowrap;
+  transition: transform .15s, box-shadow .2s, background .2s, border-color .2s;
+}
+.btn:hover { border-color: rgba(255, 255, 255, .3); background: var(--card2); }
+.btn:active { transform: scale(.98); }
+.btn.primary { background: var(--grad); border-color: transparent; color: #fff; box-shadow: 0 12px 34px rgba(124, 92, 255, .35); }
+.btn.primary:hover { box-shadow: 0 16px 44px rgba(124, 92, 255, .5); transform: translateY(-1px); }
+.btn.small { padding: 8px 14px; font-size: 14px; border-radius: 12px; }
+.btn.small .i { width: 16px; height: 16px; }
+.btn.big { padding: 14px 24px; font-size: 17px; text-align: left; }
+.btn.big .i { width: 24px; height: 24px; }
+.btn.big small { display: block; font-size: 12.5px; font-weight: 600; opacity: .85; }
+.btn.ghost { background: transparent; }
+.btn:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent2); outline-offset: 3px; }
+
+/* nav */
+.nav { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(8, 9, 13, .72); border-bottom: 1px solid var(--line); }
+.nav-in { display: flex; align-items: center; gap: 20px; height: 64px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; font-size: 17px; }
+.brand img { border-radius: 9px; }
+.links { display: none; gap: 24px; margin-left: auto; }
+.links a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 15px; }
+.links a:hover { color: var(--text); }
+.nav .btn { margin-left: auto; }
+@media (min-width: 760px) { .links { display: flex; } .nav .btn { margin-left: 8px; } }
+
+/* hero */
+.hero { display: grid; gap: 40px; align-items: center; padding-top: 48px; padding-bottom: 40px; }
+@media (min-width: 960px) { .hero { grid-template-columns: 1.05fr .95fr; padding-top: 72px; padding-bottom: 72px; } }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 99px; background: rgba(124, 92, 255, .14); border: 1px solid rgba(124, 92, 255, .35); color: #cfc4ff; font-size: 13.5px; font-weight: 700; }
+.pill .i { width: 15px; height: 15px; }
+.hero h1 { font-size: clamp(34px, 6.4vw, 60px); margin: 18px 0 18px; font-weight: 800; }
+.grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: clamp(16px, 2.2vw, 19px); color: var(--muted); max-width: 580px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 14px; }
+.fine { font-size: 13.5px; color: var(--faint); }
+
+/* phone mockup */
+.hero-art { position: relative; display: flex; justify-content: center; padding: 10px 0 30px; }
+.glow { position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%; background: var(--grad); filter: blur(90px); opacity: .35; top: 10%; }
+.phone { position: relative; width: min(300px, 78vw); aspect-ratio: 9 / 18.5; border-radius: 44px; padding: 10px; background: #1a1c24; border: 1px solid rgba(255, 255, 255, .14);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, .6), inset 0 0 0 2px #0d0e13; transform: rotate(-3deg); }
+.phone-screen { position: relative; height: 100%; border-radius: 34px; overflow: hidden; background: linear-gradient(180deg, #151225, #0a0b10 55%); display: flex; flex-direction: column; padding: 22px 12px 0; }
+.ph-top { display: flex; align-items: center; gap: 6px; }
+.ph-top b { font-size: 19px; margin-right: auto; }
+.ph-dot { width: 7px; height: 7px; border-radius: 50%; background: #34d399; box-shadow: 0 0 8px #34d399; }
+.ph-top small { font-size: 10px; color: var(--muted); }
+.ph-chips { display: flex; gap: 6px; margin: 12px 0; }
+.ph-chips span { padding: 4px 10px; border-radius: 99px; font-size: 10.5px; font-weight: 700; color: var(--muted); border: 1px solid var(--line); }
+.ph-chips .on { background: var(--grad); color: #fff; border-color: transparent; }
+.ph-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 54px; gap: 6px; }
+.t { --c: #7c5cff; position: relative; border-radius: 13px; padding: 7px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;
+  background: linear-gradient(155deg, color-mix(in srgb, var(--c) 30%, transparent), rgba(255, 255, 255, .03) 75%); border: 1px solid var(--line); }
+.t .i { width: 15px; height: 15px; color: #fff; }
+.t b { font-size: 8.5px; line-height: 1.15; }
+.t.w2 { grid-column: span 2; }
+.t.w4 { grid-column: span 4; }
+.t.on { background: color-mix(in srgb, #ff5d73 35%, transparent); border-color: rgba(255, 93, 115, .6); }
+.t.slider { justify-content: center; gap: 8px; }
+.t.slider span { display: flex; align-items: center; gap: 6px; }
+.t.slider em { margin-left: auto; font-style: normal; font-size: 9px; color: var(--muted); font-weight: 700; }
+.t.slider i { display: block; height: 6px; border-radius: 9px; background: linear-gradient(90deg, #7c5cff, #22d3ee) 0 0 / var(--p) 100% no-repeat, rgba(255, 255, 255, .1); }
+.ph-tabs { margin-top: auto; display: flex; justify-content: space-around; padding: 8px 4px 14px; border-top: 1px solid var(--line); background: rgba(12, 13, 19, .9); margin-left: -12px; margin-right: -12px; }
+.ph-tabs span { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 8.5px; font-weight: 700; color: var(--faint); }
+.ph-tabs .i { width: 15px; height: 15px; }
+.ph-tabs .on { color: var(--text); }
+.ph-tabs .on .i { color: var(--accent2); }
+.c-violet { --c: #7c5cff; } .c-cyan { --c: #22d3ee; } .c-green { --c: #34d399; } .c-orange { --c: #fb923c; }
+.c-red { --c: #ff5d73; } .c-yellow { --c: #facc15; } .c-slate { --c: #64748b; }
+.float { position: absolute; display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 16px; background: rgba(20, 22, 30, .86);
+  border: 1px solid var(--line2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 18px 40px rgba(0, 0, 0, .45); font-size: 13px; }
+.float b { display: block; font-size: 13.5px; }
+.float small { color: var(--muted); font-size: 12px; }
+.f1 { top: 14%; right: 0; animation: bob 6s ease-in-out infinite; }
+.f2 { bottom: 12%; left: 0; animation: bob 7s ease-in-out -2s infinite; }
+@media (min-width: 560px) { .f1 { right: 4%; } .f2 { left: 4%; } }
+.rec { width: 12px; height: 12px; border-radius: 50%; background: #ff5d73; box-shadow: 0 0 0 4px rgba(255, 93, 115, .25); }
+.np-art { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, #1db954, #22d3ee); display: flex; align-items: center; justify-content: center; }
+.np-art .i { width: 18px; height: 18px; color: #fff; }
+@keyframes bob { 50% { transform: translateY(-10px); } }
+@media (prefers-reduced-motion: reduce) { .float { animation: none; } html { scroll-behavior: auto; } }
+
+/* strip */
+.strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255, 255, 255, .02); }
+.strip-in { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 34px; padding-top: 18px; padding-bottom: 18px; color: var(--muted); font-weight: 600; font-size: 14.5px; }
+.strip-in span { display: inline-flex; align-items: center; gap: 8px; }
+.strip-in .i { color: var(--accent2); width: 18px; height: 18px; }
+
+/* sections */
+.section { padding-top: 80px; padding-bottom: 10px; }
+.section > h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; max-width: 760px; }
+.section-lead { color: var(--muted); margin-top: 12px; max-width: 640px; font-size: 17px; }
+.features { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 14px; margin-top: 34px; }
+.feature { padding: 22px; border-radius: var(--r); background: var(--card); border: 1px solid var(--line); transition: border-color .2s, transform .2s; }
+.feature:hover { border-color: var(--line2); transform: translateY(-2px); }
+.feature h3 { font-size: 17.5px; margin: 16px 0 8px; }
+.feature p { color: var(--muted); font-size: 14.5px; }
+.f-ic { --c: #7c5cff; width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center; color: #fff;
+  background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 45%, #000)); box-shadow: 0 10px 26px color-mix(in srgb, var(--c) 35%, transparent); }
+.f-ic .i { width: 22px; height: 22px; }
+
+.steps { list-style: none; padding: 0; margin: 34px 0 0; display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.steps li { position: relative; padding: 24px; border-radius: var(--r); background: var(--card); border: 1px solid var(--line); }
+.steps h3 { font-size: 18px; margin: 14px 0 8px; }
+.steps p { color: var(--muted); font-size: 14.5px; }
+.num { display: inline-flex; width: 38px; height: 38px; border-radius: 12px; align-items: center; justify-content: center; font-weight: 800; background: var(--grad); color: #fff; }
+
+/* download */
+.dl-card { padding: 28px 22px; border-radius: 26px; background: linear-gradient(160deg, rgba(124, 92, 255, .16), rgba(34, 211, 238, .06) 60%), var(--bg2); border: 1px solid var(--line2); }
+@media (min-width: 700px) { .dl-card { padding: 38px; } }
+.dl-head { display: flex; align-items: center; gap: 18px; }
+.dl-head img { border-radius: 20px; box-shadow: 0 14px 34px rgba(124, 92, 255, .35); }
+.dl-head h2 { font-size: clamp(22px, 3.4vw, 30px); font-weight: 800; }
+.dl-head p { color: var(--muted); margin-top: 6px; }
+.dl-list { display: grid; gap: 10px; margin: 26px 0 18px; }
+.dl { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); text-decoration: none; transition: border-color .2s, background .2s; }
+.dl:hover { border-color: var(--line2); background: var(--card2); }
+.dl .i { width: 22px; height: 22px; color: var(--accent2); }
+.dl b { display: block; font-size: 16px; }
+.dl small { display: block; color: var(--muted); font-size: 13.5px; }
+.dl.primary { background: var(--grad); border-color: transparent; }
+.dl.primary .i, .dl.primary small { color: rgba(255, 255, 255, .9); }
+
+.dl-help { display: grid; gap: 10px; }
+.dl-help > div { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: var(--muted); }
+.dl-help .i { width: 18px; height: 18px; margin-top: 2px; color: var(--accent2); }
+.dl-help b { color: var(--text); }
+.dl-tip { position: fixed; z-index: 50; left: 50%; bottom: 20px; transform: translateX(-50%); width: min(560px, calc(100% - 32px));
+  display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 16px 18px; border-radius: 18px;
+  background: rgba(20, 22, 30, .96); border: 1px solid var(--line2); box-shadow: 0 20px 50px rgba(0, 0, 0, .55);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); font-size: 14.5px; }
+.dl-tip[hidden] { display: none; }
+.dl-tip > b { font-size: 15.5px; }
+.dl-tip > span { grid-column: 1; color: var(--muted); }
+.dl-tip > span b { color: var(--text); }
+.dl-tip button { grid-column: 2; grid-row: 1 / span 2; align-self: start; width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--line2); background: var(--card); color: var(--text); font-size: 20px; line-height: 1; cursor: pointer; }
+
+/* faq */
+.faq { margin-top: 28px; display: grid; gap: 10px; max-width: 820px; }
+.faq details { border-radius: 16px; background: var(--card); border: 1px solid var(--line); padding: 0 18px; }
+.faq summary { cursor: pointer; list-style: none; padding: 16px 0; font-weight: 700; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent2); font-size: 22px; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { color: var(--muted); padding-bottom: 16px; font-size: 15px; }
+
+/* footer */
+.foot { margin-top: 90px; border-top: 1px solid var(--line); }
+.foot-in { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; padding-top: 26px; padding-bottom: 34px; color: var(--muted); font-size: 14px; }
+.foot nav { display: flex; gap: 18px; }
+.foot nav a { text-decoration: none; }
+.foot nav a:hover { color: var(--text); }
+.foot small { margin-left: auto; color: var(--faint); }
+.brand.small { font-size: 14px; gap: 8px; }
+.brand.small img { border-radius: 6px; }
+
+/* legal pages */
+.legal { padding-top: 50px; } /* same container as the header, so the text lines up with the logo */
+.legal > * { max-width: 760px; }
+.legal h1 { font-size: 34px; margin-bottom: 20px; }
+.legal h2 { font-size: 20px; margin: 30px 0 10px; }
+.legal p, .legal li { color: var(--muted); }
+.legal .todo { color: #fbbf24; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M22 8l-6 4 6 4z"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="10" rx="2"/><rect x="17" y="8" width="5" height="12" rx="1"/><path d="M6 18h6"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+  <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M4 7h4a2 2 0 1 1 4 0h4v4a2 2 0 1 1 0 4v4H4v-4a2 2 0 1 0 0-4z"/></symbol>
+  <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="6"/><path d="M12 6v4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v.01M14 21h.01M17 21h4v-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 5l10 7-10 7z"/><path d="M19 5v14"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M19 5L9 12l10 7z"/><path d="M5 5v14"/></symbol>
+  <symbol id="i-micoff" viewBox="0 0 24 24"><path d="M2 2l20 20"/><path d="M15 9.3V5a3 3 0 0 0-5.7-1.3"/><path d="M9 9v3a3 3 0 0 0 4.9 2.3"/><path d="M19 10a7 7 0 0 1-1.1 3.8M5 10a7 7 0 0 0 11.4 5.4M12 17v5M8 22h8"/></symbol>
+  <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></symbol>
+  <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15a3 3 0 0 0 5.3 2l1.4-1.6a2 2 0 0 1 1.5-.7h3.6a2 2 0 0 1 1.5.7l1.4 1.6A3 3 0 0 0 22 15l-.7-6.4A4 4 0 0 0 17.3 5z"/></symbol>
+  <symbol id="i-record" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0M12 20h.01"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="data:image/png;base64,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" alt="" width="32" height="32"><span>PC Remote</span></a>
+    <nav class="links">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#so-gehts">So geht's</a>
+      <a href="#fragen">Fragen</a>
+    </nav>
+    <a class="btn small primary" href="#download"><svg class="i"><use href="#i-download"/></svg>Download</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <span class="pill"><svg class="i"><use href="#i-zap"/></svg>Neu in 2.1: Clips &amp; Hardware-Encoder</span>
+      <h1>Dein Handy wird zur <span class="grad">Fernbedienung</span> für deinen PC.</h1>
+      <p class="lead">Eigene Buttons wie bei einem Stream Deck, Spotify und Discord steuern, Lautstärke pro App, Clips wie bei ShadowPlay – und dein Handy als zweiter Bildschirm. Kostenlos, ohne Konto, alles bleibt in deinem WLAN.</p>
+      <div class="cta">
+        <a class="btn primary big" href="PCRemote-Setup.exe" download data-setup>
+          <svg class="i"><use href="#i-download"/></svg>
+          <span>Für Windows herunterladen<small data-setup-size>Version 2.1 · 528 KB</small></span>
+        </a>
+        <a class="btn ghost" href="#download">Weitere Downloads</a>
+      </div>
+      <p class="fine">Windows 10 und 11 (64-Bit) · Am Handy reicht der Browser – Android und iPhone</p>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="ph-top"><b>Deck</b><span class="ph-dot"></span><small>Verbunden</small></div>
+          <div class="ph-chips"><span class="on">Start</span><span>Gaming</span><span>Stream</span></div>
+          <div class="ph-grid">
+            <div class="t w2 c-green"><svg class="i"><use href="#i-play"/></svg><b>Play / Pause</b></div>
+            <div class="t c-violet on"><svg class="i"><use href="#i-micoff"/></svg><b>Mikro</b></div>
+            <div class="t c-violet"><svg class="i"><use href="#i-headphones"/></svg><b>Ton</b></div>
+            <div class="t c-cyan"><svg class="i"><use href="#i-prev"/></svg><b>Zurück</b></div>
+            <div class="t c-cyan"><svg class="i"><use href="#i-next"/></svg><b>Weiter</b></div>
+            <div class="t c-orange"><svg class="i"><use href="#i-gamepad"/></svg><b>Spiel</b></div>
+            <div class="t c-red"><svg class="i"><use href="#i-scissors"/></svg><b>Clip</b></div>
+            <div class="t w4 slider c-cyan"><span><svg class="i"><use href="#i-music"/></svg><b>Spotify</b><em>64 %</em></span><i style="--p:64%"></i></div>
+            <div class="t c-slate"><svg class="i"><use href="#i-monitor"/></svg><b>Desktop</b></div>
+            <div class="t c-cyan"><svg class="i"><use href="#i-devices"/></svg><b>Bildschirm</b></div>
+            <div class="t w2 c-yellow"><svg class="i"><use href="#i-zap"/></svg><b>Makro: Stream starten</b></div>
+          </div>
+          <div class="ph-tabs">
+            <span class="on"><svg class="i"><use href="#i-grid"/></svg>Deck</span>
+            <span><svg class="i"><use href="#i-music"/></svg>Medien</span>
+            <span><svg class="i"><use href="#i-video"/></svg>Clips</span>
+            <span><svg class="i"><use href="#i-puzzle"/></svg>Apps</span>
+            <span><svg class="i"><use href="#i-sliders"/></svg>Mixer</span>
+          </div>
+        </div>
+      </div>
+      <div class="float f1"><span class="rec"></span><div><b>Clip gespeichert</b><small>Letzte 30 Sekunden · mit Ton</small></div></div>
+      <div class="float f2"><div class="np-art"><svg class="i"><use href="#i-music"/></svg></div><div><b>Läuft gerade</b><small>Spotify · Lautstärke 64 %</small></div></div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="wrap strip-in">
+      <span><svg class="i"><use href="#i-wifi"/></svg>Nur in deinem WLAN</span>
+      <span><svg class="i"><use href="#i-lock"/></svg>Ohne Konto, ohne Cloud</span>
+      <span><svg class="i"><use href="#i-zap"/></svg>Flüssig dank Grafikkarte</span>
+      <span><svg class="i"><use href="#i-check"/></svg>Kostenlos</span>
+    </div>
+  </section>
+
+  <section id="funktionen" class="wrap section">
+    <h2>Alles, was du am PC drückst – jetzt am Handy.</h2>
+    <p class="section-lead">PC Remote läuft unauffällig im Tray. Dein Handy öffnet die Steuerung einfach im Browser – eine App aus dem Store brauchst du nicht.</p>
+    <div class="features">
+      <article class="feature">
+        <div class="f-ic c-violet"><svg class="i"><use href="#i-grid"/></svg></div>
+        <h3>Dein eigenes Deck</h3>
+        <p>Buttons frei aufs Raster legen, ziehen, größer machen, auf Seiten sortieren. Tastenkürzel, Makros, Programme, Webseiten, Energie – mit Rückgängig.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-green"><svg class="i"><use href="#i-music"/></svg></div>
+        <h3>Medien &amp; Spotify</h3>
+        <p>Cover, Spulen, Shuffle und Wiederholen für jede App. Mit Spotify verbunden auch Playlists, Suche, Warteschlange, Liken und die Lautstärke direkt in Spotify.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-red"><svg class="i"><use href="#i-scissors"/></svg></div>
+        <h3>Clips wie bei ShadowPlay</h3>
+        <p>Die letzten 15 Sekunden bis 2 Minuten mit Ton sichern – per Handy, Tray oder Tastenkürzel mitten im Spiel. Nutzt NVENC, Quick Sync oder AMF der Grafikkarte.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-cyan"><svg class="i"><use href="#i-devices"/></svg></div>
+        <h3>Handy als Bildschirm</h3>
+        <p>Ein Tipp und dein Handy ist der zweite oder dritte Monitor – links, rechts, oben oder unten, auch hochkant. Flüssiges H.264-Video, Tippen ist Klicken.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-orange"><svg class="i"><use href="#i-sliders"/></svg></div>
+        <h3>Mixer</h3>
+        <p>Lautstärke für jede App einzeln, Mikrofon stumm, Ausgabegerät wechseln – und Voicemeeter mit Gain, Mute und Bussen.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-violet"><svg class="i"><use href="#i-puzzle"/></svg></div>
+        <h3>Addons für deine Apps</h3>
+        <p>Discord stumm und taub schalten, Medal und NVIDIA Replay, Steam, Riot, Browser und mehr – jede App bekommt ihre eigene Seite mit passenden Knöpfen.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-cyan"><svg class="i"><use href="#i-mouse"/></svg></div>
+        <h3>Maus &amp; Tastatur</h3>
+        <p>Touchpad, Live-Tippen, Zwischenablage hin und her und ein Live-Bild vom PC, in das du einfach hineintippst.</p>
+      </article>
+      <article class="feature">
+        <div class="f-ic c-green"><svg class="i"><use href="#i-lock"/></svg></div>
+        <h3>Sicher verbunden</h3>
+        <p>Neue Handys koppeln sich per QR-Code, PIN oder Bestätigung am PC. Danach verbinden sie sich von selbst – und lassen sich jederzeit wieder entfernen.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="so-gehts" class="wrap section">
+    <h2>In zwei Minuten startklar.</h2>
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <h3>Installieren</h3>
+        <p>Setup herunterladen und starten. Keine Admin-Rechte nötig – PC Remote landet im Startmenü und auf Wunsch im Autostart.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <h3>Handy verbinden</h3>
+        <p>Am PC erscheint ein QR-Code. Mit der Handy-Kamera scannen – PC und Handy müssen im selben WLAN sein.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <h3>Loslegen</h3>
+        <p>Im Browser-Menü „Zum Startbildschirm hinzufügen“ – dann startet PC Remote wie eine App und verbindet sich von selbst.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="download" class="wrap section">
+    <div class="dl-card">
+      <div class="dl-head">
+        <img src="data:image/png;base64,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" alt="" width="72" height="72">
+        <div>
+          <h2>PC Remote 2.1 herunterladen</h2>
+          <p>Für Windows 10 und 11 (64-Bit) · Stand 22.10.2026</p>
+        </div>
+      </div>
+      <div class="dl-list">
+        <a class="dl primary" href="PCRemote-Setup.exe" download data-setup-item>
+          <svg class="i"><use href="#i-download"/></svg>
+          <span><b>Installer</b><small>Empfohlen · 528 KB · mit Startmenü, Autostart und Deinstallation</small></span>
+        </a>
+        <a class="dl" href="PCRemote-Portable.zip" download data-zip-item>
+          <svg class="i"><use href="#i-download"/></svg>
+          <span><b>Portable (ZIP)</b><small>487 KB · entpacken und PCRemote.exe starten, nichts wird installiert</small></span>
+        </a>
+        <a class="dl" href="PCRemote-Quellcode.zip" download>
+          <svg class="i"><use href="#i-download"/></svg>
+          <span><b>Quellcode (ZIP)</b><small>492 KB · C# und JavaScript, baut mit Bordmitteln von Windows</small></span>
+        </a>
+      </div>
+      <div class="dl-help">
+        <div><svg class="i"><use href="#i-check"/></svg><span><b>Geprüft:</b> Windows Defender findet in den Downloads nichts (Stand 22.10.2026).</span></div>
+        <div><svg class="i"><use href="#i-download"/></svg><span><b>Browser warnt beim Download?</b> PC Remote ist neu und noch nicht kostenpflichtig signiert – deshalb sind Chrome und Edge vorsichtig. Oben rechts in der Download-Liste bei der Datei auf <b>„Behalten“</b> (Edge: „…“ → „Beibehalten“) klicken.</span></div>
+        <div><svg class="i"><use href="#i-lock"/></svg><span><b>Windows warnt beim Start?</b> Bei „Der Computer wurde durch Windows geschützt“ auf „Weitere Informationen“ und dann „Trotzdem ausführen“ klicken.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fragen" class="wrap section">
+    <h2>Häufige Fragen</h2>
+    <div class="faq">
+      <details>
+        <summary>Kostet PC Remote etwas?</summary>
+        <p>Nein. PC Remote ist kostenlos, ohne Werbung und ohne Konto.</p>
+      </details>
+      <details>
+        <summary>Brauche ich eine App auf dem Handy?</summary>
+        <p>Nein. Das Handy öffnet die Steuerung im Browser – Android und iPhone. Über „Zum Startbildschirm hinzufügen“ bekommt sie ein eigenes Symbol und startet im Vollbild.</p>
+      </details>
+      <details>
+        <summary>Mein Handy findet den PC nicht. Was tun?</summary>
+        <p>PC und Handy müssen im selben WLAN sein. Erlaube PC Remote beim ersten Start in der Windows-Firewall (der Installer kann das für dich erledigen) und stelle dein Heimnetz in Windows auf „Privat“.</p>
+      </details>
+      <details>
+        <summary>Ist das sicher?</summary>
+        <p>PC Remote ist nur in deinem eigenen Netzwerk erreichbar. Jedes Gerät muss einmal per QR-Code, PIN oder Bestätigung am PC gekoppelt werden; falsche Versuche werden gesperrt. Es gibt keine Cloud – deine Daten bleiben auf deinem PC.</p>
+      </details>
+      <details>
+        <summary>Welche Grafikkarte brauche ich für Clips?</summary>
+        <p>Keine bestimmte. Mit NVIDIA (NVENC), Intel (Quick Sync) oder AMD (AMF) arbeitet die Grafikkarte und du merkst beim Zocken kaum etwas. Ohne Hardware-Encoder nimmt PC Remote den Encoder von Windows. Clips landen unter Videos → PC Remote Clips.</p>
+      </details>
+      <details>
+        <summary>Funktioniert „Handy als Bildschirm“ mit jedem Handy?</summary>
+        <p>Mit Android und aktuellen iPhones ja. Dafür installiert PC Remote einmalig den kostenlosen Bildschirm-Treiber von Parsec – Windows fragt dabei einmal nach Erlaubnis.</p>
+      </details>
+      <details>
+        <summary>Wie deinstalliere ich PC Remote?</summary>
+        <p>Windows-Einstellungen → Apps → PC Remote → Deinstallieren. Auf Wunsch bleiben deine Einstellungen für später erhalten, deine Clips bleiben immer.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand small"><img src="data:image/png;base64,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" alt="" width="22" height="22">PC Remote 2.1</span>
+    <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <small>© 2026 PC Remote</small>
+  </div>
+</footer>
+
+<div class="dl-tip" id="dl-tip" role="status" hidden>
+  <b>Download gestartet</b>
+  <span>Zeigt der Browser eine Warnung? Oben rechts in der Download-Liste auf <b>„Behalten“</b> klicken (Edge: „…“ → „Beibehalten“). Die Datei ist geprüft.</span>
+  <button type="button" aria-label="Schließen" onclick="this.parentNode.hidden = true">×</button>
+</div>
+
+<script>
+// After a click on a download: short help for the browser's "keep this file?" question.
+(function () {
+  var tip = document.getElementById('dl-tip'), timer;
+  document.querySelectorAll('a[download]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      tip.hidden = false;
+      clearTimeout(timer);
+      timer = setTimeout(function () { tip.hidden = true; }, 20000);
+    });
+  });
+})();
+</script>
+<script>
+// Some (free) web hosts refuse .exe files. If the installer isn't on the server, offer the ZIP instead.
+(function () {
+  if (!/^https?:$/.test(location.protocol) || !window.fetch) return;
+  fetch('PCRemote-Setup.exe', { method: 'HEAD', cache: 'no-store' }).then(function (r) {
+    if (r.status !== 404 && r.status !== 403 && r.status !== 410) return;
+    document.querySelectorAll('[data-setup]').forEach(function (a) { a.href = 'PCRemote-Portable.zip'; });
+    document.querySelectorAll('[data-setup-size]').forEach(function (s) { s.textContent = 'Version 2.1 · ZIP · 487 KB'; });
+    document.querySelectorAll('[data-setup-item]').forEach(function (a) { a.style.display = 'none'; });
+    document.querySelectorAll('[data-zip-item]').forEach(function (a) { a.classList.add('primary'); });
+  }).catch(function () { });
+})();
+</script>
+</body>
+</html>
