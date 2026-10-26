@@ -2,7 +2,7 @@
 
 **Dein Handy wird zur Fernbedienung für deinen Windows-PC** – eigene Buttons wie bei einem Stream Deck, Spotify und Discord steuern, Lautstärke pro App, Clips wie bei ShadowPlay und das Handy als zweiter Bildschirm. Kostenlos, ohne Konto, alles bleibt in deinem WLAN.
 
-**[Website](https://knicklicht114.github.io/pc-remote/)** · **[Download (Version 2.2)](https://github.com/knicklicht114/pc-remote/releases/latest/download/PCRemote-Setup.exe)** · [Alle Versionen](https://github.com/knicklicht114/pc-remote/releases)
+**[Website](https://knicklicht114.github.io/pc-remote/)** · **[Download (Version 1.2.0)](https://github.com/knicklicht114/pc-remote/releases/latest/download/PCRemote-Setup.exe)** · [Alle Versionen](https://github.com/knicklicht114/pc-remote/releases)
 
 ![PC Remote](screenshot.png)
 
